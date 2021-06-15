@@ -13,11 +13,11 @@ screen = pygame.display.set_mode((800, 600))
 
 # Title And Icon
 pygame.display.set_caption("Space Invaders")
-icon = pygame.image.load('/home/kali/Desktop/Python/Pygame/ufo.png')
+icon = pygame.image.load('ufo.png')
 pygame.display.set_icon(icon)
 
 # Player
-playerImg = pygame.image.load('/home/kali/Desktop/Python/Pygame/player.png')
+playerImg = pygame.image.load('player.png')
 playerX = 370
 playerY = 480
 playerX_change = 0
@@ -32,7 +32,7 @@ num_of_enemies = 6
 
 for i in range(num_of_enemies):
     enemyImg.append(pygame.image.load(
-        '/home/kali/Desktop/Python/Pygame/enemy.png'))
+        'enemy.png'))
     enemyX.append(random.randint(0, 735))
     enemyY.append(random.randint(50, 150))
     enemyX_change.append(2)
@@ -41,7 +41,7 @@ for i in range(num_of_enemies):
 # Ready - You can't see the bullet
 # Fire - The bullet is moving
 # Bullet
-bulletImg = pygame.image.load('/home/kali/Desktop/Python/Pygame/bullet.png')
+bulletImg = pygame.image.load('bullet.png')
 bulletX = 0
 bulletY = 480
 bulletX_change = 0
